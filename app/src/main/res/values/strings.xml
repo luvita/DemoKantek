@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DemoKantek</string>
+    <string name="title_login">Demo KanTek</string>
+    <string name="txt_login">UserName</string>
+    <string name="username">user name</string>
+    <string name="txt_pass">Password</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="name">Tên Đăng Nhập : </string>
+    <string name="email">Email</string>
+    <string name="txt_email">Email : </string>
+    <string name="txt_phoneNumber">số Điện Thoại : </string>
+    <string name="phoneNumber">số Điện Thoại</string>
+</resources>
