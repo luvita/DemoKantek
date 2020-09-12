@@ -22,10 +22,9 @@ class LoginRepository(val netWorkApi: NetWorkApi) {
             }
 
             override fun onResponse(call: Call<BaseResponse<UserInfo>>, response: Response<BaseResponse<UserInfo>>) {
-                val code = response.code()
-                when(code) {
-                    200 -> login.onSuccess((response.body() as BaseResponse<UserInfo>))
-                    else -> login.onFailure("sai username hoac password")
+                when(response.body()!!.result) {
+                    true -> login.onSuccess((response.body() as BaseResponse<UserInfo>))
+                    false -> login.onFailure("sai username hoac password")
                 }
             }
 
